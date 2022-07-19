@@ -14,13 +14,13 @@ namespace Wabbajack.Lib.Downloaders
     {
         #region INeedsDownload
         public override string SiteName => "Vector Plexus";
-        public override Uri SiteURL => new Uri("https://vectorplexus.com");
-        public override Uri IconUri => new Uri("https://www.vectorplexus.com/favicon.ico");
+        public override Uri SiteURL => new Uri("https://vectorplexis.com");
+        public override Uri IconUri => new Uri("https://www.vectorplexis.com/favicon.ico");
         #endregion
 
         public VectorPlexusOAuthDownloader() : base("45c6d3c9867903a7daa6ded0a38cedf8", 
-            new Uri("https://vectorplexus.com/oauth/authorize/"), 
-            new Uri("https://vectorplexus.com/oauth/token/"), 
+            new Uri("https://vectorplexis.com/oauth/authorize/"), 
+            new Uri("https://vectorplexis.com/oauth/token/"), 
             new []{"profile", "get_downloads"},
             "vector-plexus-oauth2")
         {
